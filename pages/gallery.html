@@ -10,88 +10,152 @@
           <div class="flex flex-wrap gap-2 mb-8">
             <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-brand text-white" data-gallery-filter="all">All</button>
             <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="speaking">Speaking</button>
-            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="awards">Awards</button>
             <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="events">Events</button>
+            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="workshop">Workshop</button>
           </div>
 
           <!-- Photo Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
-            <!-- Placeholder cards - replace src with actual photos -->
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
-              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
-                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
-                <span class="text-xs font-medium">Speaking Photo 1</span>
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Community Talk</p>
-                  <p class="text-white/70 text-xs">Speaking · 2024</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="awards">
-              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
-                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
-                <span class="text-xs font-medium">Award Photo 1</span>
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Award Ceremony</p>
-                  <p class="text-white/70 text-xs">Awards · 2024</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
-              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
-                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
-                <span class="text-xs font-medium">Event Photo 1</span>
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Tech Conference</p>
-                  <p class="text-white/70 text-xs">Events · 2024</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
-              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
-                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
-                <span class="text-xs font-medium">Speaking Photo 2</span>
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Workshop Session</p>
-                  <p class="text-white/70 text-xs">Speaking · 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="awards">
-              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
-                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
-                <span class="text-xs font-medium">Award Photo 2</span>
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Star Performer</p>
-                  <p class="text-white/70 text-xs">Awards · 2023</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
-              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
-                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
-                <span class="text-xs font-medium">Event Photo 2</span>
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Hackathon</p>
-                  <p class="text-white/70 text-xs">Events · 2023</p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="mt-8 p-6 bg-slate-50 border border-dashed border-slate-300 rounded-2xl text-center">
-            <ion-icon name="cloud-upload-outline" class="text-3xl text-slate-400 mb-2"></ion-icon>
-            <p class="text-slate-500 text-sm">Replace placeholder cards above with your actual photos by updating the <code class="text-xs bg-slate-100 px-2 py-0.5 rounded">src</code> attributes in the gallery grid.</p>
+            <!-- SPEAKING -->
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <img src="../assets/images/gallery/speaking-closeup.jpg" alt="Speaking close-up with mic at panel discussion" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Panel Speaker</p>
+                  <p class="text-white/70 text-xs">Speaking · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <img src="../assets/images/gallery/speaking-keynote.jpg" alt="SabkaAI Keynote at AI Impact Summit 2026" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">SabkaAI Keynote</p>
+                  <p class="text-white/70 text-xs">Speaking · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <img src="../assets/images/gallery/speaking-stage-presummit.jpg" alt="On stage at CoE DSAI SabkaAI Pre-Summit event" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Pre-Summit Stage</p>
+                  <p class="text-white/70 text-xs">Speaking · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <img src="../assets/images/gallery/panel-seated-discussion.jpg" alt="Seated panel discussion at TIET-UQ CoE DSAI" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Panel Discussion</p>
+                  <p class="text-white/70 text-xs">Speaking · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <img src="../assets/images/gallery/panel-standing-stage.jpg" alt="Panelists standing together on stage" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Panelists on Stage</p>
+                  <p class="text-white/70 text-xs">Speaking · 2026</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/event-group-ai-summit.jpg" alt="Group photo at AI Impact Summit 2026" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">AI Summit Group Photo</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/event-formal-group.jpg" alt="Formal group photo with dignitaries" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">With Dignitaries</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/event-prize-ceremony.jpg" alt="Prize ceremony at SabkaAI hackathon" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Hackathon Prize Ceremony</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/event-panel.jpg" alt="Panel at AI Impact Summit with COE DSAI" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">AI Impact Summit Panel</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/event-sabkaai-booth.jpg" alt="SabkaAI for Inclusion pre-summit booth" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">SabkaAI Pre-Summit Booth</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/event-thapar-portrait.jpg" alt="At Thapar Institute of Engineering & Technology" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">At Thapar Institute</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <img src="../assets/images/gallery/networking-handshake.jpg" alt="Professional networking at AI event" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Networking</p>
+                  <p class="text-white/70 text-xs">Events · 2026</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WORKSHOP -->
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="workshop">
+              <img src="../assets/images/gallery/speaking-mentoring.jpg" alt="Mentoring session with students" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Mentoring Session</p>
+                  <p class="text-white/70 text-xs">Workshop · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="workshop">
+              <img src="../assets/images/gallery/speaking-discussion.jpg" alt="Workshop discussion with colleagues" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Workshop Discussion</p>
+                  <p class="text-white/70 text-xs">Workshop · 2026</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="workshop">
+              <img src="../assets/images/gallery/workshop-hackathon.jpg" alt="Hackathon workshop teaching session" class="w-full h-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Hackathon Workshop</p>
+                  <p class="text-white/70 text-xs">Workshop · 2026</p>
+                </div>
+              </div>
+            </div>
+
           </div>
