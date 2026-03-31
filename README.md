@@ -74,8 +74,8 @@ Projects showcase:
 ### 2. Update Contact Information
 
 In `index.html`, update:
-- Email address (line ~79): `vinay.singh@example.com` → your actual email
-- Phone number (line ~91): `+91 (000) 000-0000` → your actual phone
+- Email address (line ~79): `vinay199129@gmail.com` → your actual email
+- Phone number (line ~91): `+91 (855) 798-9106` → your actual phone
 - Social media links (lines ~130-150): Update LinkedIn, GitHub, Twitter URLs
 
 ### 3. Customize Content

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
-  <rect width="400" height="300" fill="#2c2c2e"/>
-  <rect x="50" y="50" width="300" height="200" fill="#3a3a3c" rx="10"/>
-  <text x="200" y="140" font-family="Arial, sans-serif" font-size="24" fill="#ffdb70" text-anchor="middle" font-weight="bold">Renault-Nissan</text>
-  <text x="200" y="170" font-family="Arial, sans-serif" font-size="16" fill="#aaa" text-anchor="middle">Connected Vehicle</text>
-</svg>

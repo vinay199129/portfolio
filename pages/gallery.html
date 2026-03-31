@@ -1,0 +1,97 @@
+
+          <header class="mb-10">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Gallery</h2>
+            <div class="h-1.5 w-16 bg-gradient-to-r from-brand to-brand-light rounded-full"></div>
+          </header>
+
+          <p class="text-slate-600 text-sm leading-relaxed mb-8">Snapshots from community speaking engagements, award ceremonies, and tech events.</p>
+
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap gap-2 mb-8">
+            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-brand text-white" data-gallery-filter="all">All</button>
+            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="speaking">Speaking</button>
+            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="awards">Awards</button>
+            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="events">Events</button>
+          </div>
+
+          <!-- Photo Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+            <!-- Placeholder cards - replace src with actual photos -->
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
+                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
+                <span class="text-xs font-medium">Speaking Photo 1</span>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Community Talk</p>
+                  <p class="text-white/70 text-xs">Speaking · 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="awards">
+              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
+                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
+                <span class="text-xs font-medium">Award Photo 1</span>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Award Ceremony</p>
+                  <p class="text-white/70 text-xs">Awards · 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
+                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
+                <span class="text-xs font-medium">Event Photo 1</span>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Tech Conference</p>
+                  <p class="text-white/70 text-xs">Events · 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
+              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
+                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
+                <span class="text-xs font-medium">Speaking Photo 2</span>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Workshop Session</p>
+                  <p class="text-white/70 text-xs">Speaking · 2023</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="awards">
+              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
+                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
+                <span class="text-xs font-medium">Award Photo 2</span>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Star Performer</p>
+                  <p class="text-white/70 text-xs">Awards · 2023</p>
+                </div>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
+              <div class="w-full h-full flex flex-col items-center justify-center text-slate-300">
+                <ion-icon name="image-outline" class="text-5xl mb-2"></ion-icon>
+                <span class="text-xs font-medium">Event Photo 2</span>
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div class="absolute bottom-0 left-0 right-0 p-4">
+                  <p class="text-white text-sm font-semibold">Hackathon</p>
+                  <p class="text-white/70 text-xs">Events · 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 bg-slate-50 border border-dashed border-slate-300 rounded-2xl text-center">
+            <ion-icon name="cloud-upload-outline" class="text-3xl text-slate-400 mb-2"></ion-icon>
+            <p class="text-slate-500 text-sm">Replace placeholder cards above with your actual photos by updating the <code class="text-xs bg-slate-100 px-2 py-0.5 rounded">src</code> attributes in the gallery grid.</p>
+          </div>

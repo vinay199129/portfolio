@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#1a0a2e" rx="12"/>
+  <circle cx="200" cy="120" r="50" fill="url(#g4)" opacity="0.9"/>
+  <path d="M188 108 h24 v24 h-24 z" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <path d="M183 115 h5 M183 122 h5 M183 129 h5" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M195 115 l5 5 l10-10" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="205" font-family="Inter, sans-serif" font-size="16" fill="#e9a8fa" text-anchor="middle" font-weight="600">AI Procurement</text>
+  <text x="200" y="230" font-family="Inter, sans-serif" font-size="12" fill="#6b4580" text-anchor="middle">RAG-Powered Platform</text>
+</svg>

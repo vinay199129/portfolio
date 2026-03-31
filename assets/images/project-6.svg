@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#f87171"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#1a0a0a" rx="12"/>
+  <circle cx="200" cy="120" r="50" fill="url(#g6)" opacity="0.9"/>
+  <path d="M182 125 h36 l-4-10 h-28 z" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="190" cy="130" r="4" fill="none" stroke="#fff" stroke-width="2"/>
+  <circle cx="210" cy="130" r="4" fill="none" stroke="#fff" stroke-width="2"/>
+  <path d="M195 108 a15 15 0 0 1 10 0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="200" y="205" font-family="Inter, sans-serif" font-size="16" fill="#fca5a5" text-anchor="middle" font-weight="600">Connected Vehicle</text>
+  <text x="200" y="230" font-family="Inter, sans-serif" font-size="12" fill="#7a3535" text-anchor="middle">IoT Telemetry Platform</text>
+</svg>
