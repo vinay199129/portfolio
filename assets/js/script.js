@@ -42,30 +42,47 @@ if (sidebarBtn && sidebar) {
 
 
 // =============================================
-// PAGE NAVIGATION (shell elements — always in DOM)
+// PAGE NAVIGATION & HASH-BASED ROUTING
+// Supports #about, #resume, #portfolio, #gallery
 // =============================================
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
+function navigateToPage(pageName) {
+  for (let j = 0; j < pages.length; j++) {
+    if (pageName === pages[j].dataset.page) {
+      pages[j].classList.add("active");
+      navigationLinks[j].classList.add("active");
+    } else {
+      pages[j].classList.remove("active");
+      navigationLinks[j].classList.remove("active");
+    }
+  }
+  window.scrollTo(0, 0);
+  loadPage(pageName);
+}
+
+function handleHash() {
+  const hash = location.hash.replace('#', '');
+  const validPages = Array.from(pages).map(function(p) { return p.dataset.page; });
+  if (hash && validPages.indexOf(hash) !== -1) {
+    navigateToPage(hash);
+  }
+}
+
+// Nav click → update hash (triggers hashchange)
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     const targetPage = this.innerHTML.trim().toLowerCase();
-
-    for (let j = 0; j < pages.length; j++) {
-      if (targetPage === pages[j].dataset.page) {
-        pages[j].classList.add("active");
-        navigationLinks[j].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[j].classList.remove("active");
-        navigationLinks[j].classList.remove("active");
-      }
-    }
-
-    // Lazily load page content
-    loadPage(targetPage);
+    location.hash = targetPage;
   });
 }
+
+// On initial load, navigate to hash if present
+handleHash();
+
+// Handle browser back/forward
+window.addEventListener('hashchange', handleHash);
 
 
 // =============================================

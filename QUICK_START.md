@@ -2,38 +2,40 @@
 
 ## ✅ What's Been Created
 
-Your portfolio has been successfully created at:
-`C:\Users\vbhadauria\OneDrive - Microsoft\Desktop\My Resume\portfolio\`
+Your portfolio is live at:
+`https://vinay199129.github.io/portfolio/`
 
-### Files Created:
-- ✅ `index.html` - Main portfolio page with your information
+### Files:
+- ✅ `index.html` - Main SPA shell (loads page partials dynamically)
+- ✅ `pages/*.html` - Page partials (about, resume, portfolio, gallery)
 - ✅ `assets/css/style.css` - Complete styling
 - ✅ `assets/js/script.js` - Interactive functionality
-- ✅ `assets/images/` - Placeholder images and icons
+- ✅ `assets/js/counters.js` - Animated counters
+- ✅ `assets/images/` - Profile, project icons, and gallery photos
 - ✅ `README.md` - Detailed documentation
 
 ## 🎯 Your Portfolio Includes:
 
-### Content from Your Resume:
+### Content:
 - ✅ Professional Summary (14 years experience)
-- ✅ Work Experience at Microsoft, SD Global, Intersoft
-- ✅ Major Projects: BP, Mahindra, DGE, Danone, GM, Renault, etc.
+- ✅ Work Experience (NDA-compliant, no client names)
+- ✅ 9 Enterprise Projects with filtering
 - ✅ Education: M.Tech (AI/ML) in progress, B.Tech (CS)
 - ✅ Technical Skills: Azure, GenAI, Platform Engineering, Python
-- ✅ Awards & Recognition from Microsoft and previous companies
+- ✅ Awards & Recognition
+- ✅ Gallery with LinkedIn-linked event photos
 
 ### Sections:
-1. **About** - Your professional summary and expertise areas
-2. **Resume** - Education, experience timeline, skills with visual progress bars
-3. **Portfolio** - 9 major projects with filtering (Enterprise AI, Cloud Platform, Data & Governance)
-4. **Contact** - Contact form and map
+1. **About** - Professional summary, expertise areas, and impact counters
+2. **Resume** - Skills, experience timeline, and certifications
+3. **Portfolio** - 9 NDA-compliant projects (Enterprise AI, Cloud Platform, Data & Governance)
+4. **Gallery** - Speaking engagements, events, and workshop photos
 
 ## 🚀 Next Steps (IMPORTANT):
 
-### 1. View Your Portfolio Right Now!
-The portfolio should already be open in your browser. If not:
-- Navigate to: `C:\Users\vbhadauria\OneDrive - Microsoft\Desktop\My Resume\portfolio\`
-- Double-click `index.html`
+### 1. View Your Portfolio
+- **Live site:** https://vinay199129.github.io/portfolio/
+- **Local testing:** Run the `Serve Portfolio Locally` VS Code task, then open http://localhost:8000
 
 ### 2. Replace Placeholder Images (Critical):
 All images are currently placeholders (simple SVG graphics). Replace these:
@@ -46,17 +48,9 @@ Replace with your professional photo (150x150px recommended)
 
 **Priority 2 - Project Screenshots:**
 ```
-assets/images/project-bp.jpg
-assets/images/project-mahindra.jpg
-assets/images/project-dge.jpg
-assets/images/project-danone.jpg
-assets/images/project-gm.jpg
-assets/images/project-renault.jpg
-assets/images/project-paychex.jpg
-assets/images/project-gallagher.jpg
-assets/images/project-modernhire.jpg
+assets/images/project-1.svg through project-9.svg
 ```
-Replace with actual project screenshots or relevant images (400x300px)
+Replace SVG placeholders with actual project screenshots (400x300px, NDA-safe)
 
 **Priority 3 - Logos:**
 ```

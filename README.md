@@ -1,4 +1,4 @@
-# Vinay Singh - Personal Portfolio
+# Vinay Pratap Singh - Personal Portfolio
 
 A modern, responsive personal portfolio website showcasing your professional experience, skills, and projects.
 
@@ -15,25 +15,33 @@ A modern, responsive personal portfolio website showcasing your professional exp
 
 ```
 portfolio/
-├── index.html              # Main HTML file
+├── index.html              # SPA shell (loads pages dynamically via fetch)
+├── pages/                  # Page partials injected into index.html
+│   ├── about.html
+│   ├── resume.html
+│   ├── portfolio.html
+│   └── gallery.html
 ├── assets/
 │   ├── css/
 │   │   └── style.css      # Styling
 │   ├── js/
-│   │   └── script.js      # Interactive functionality
-│   └── images/            # Images and icons
-│       ├── my-avatar.png  # Your profile picture (REPLACE THIS!)
-│       ├── project-*.jpg  # Project screenshots (REPLACE THESE!)
-│       └── *.svg          # Icon files
-└── README.md              # This file
+│   │   ├── script.js      # SPA navigation & interactions
+│   │   └── counters.js    # Animated counters
+│   └── images/
+│       ├── profile-pic.jpg # Profile picture
+│       ├── project-*.svg   # Project icons (placeholders)
+│       ├── *.svg           # Icon files
+│       └── gallery/        # Event & speaking photos
+│           └── thumbs/     # Optimized thumbnails
+└── README.md
 ```
 
 ## 🎨 Sections
 
-1. **About**: Professional summary and core competencies
-2. **Resume**: Education, experience timeline, and technical skills
-3. **Portfolio**: Showcase of 9 major projects (NDA-compliant, no client names)
-4. **Contact**: Contact form and location map
+1. **About**: Professional summary, expertise areas, and impact counters
+2. **Resume**: Technical skills, experience timeline, and certifications
+3. **Portfolio**: 9 NDA-compliant enterprise projects with category filtering
+4. **Gallery**: Speaking engagements, events, and workshop photos with LinkedIn post links
 
 ## ⚠️ NDA Compliance
 
@@ -107,15 +115,6 @@ Create and add a favicon:
 
 ## 🚚 Deployment
 
-### Quick Start: Use the Deployment Script! 
-
-**Easiest Way**: Run the provided PowerShell script:
-```powershell
-cd "C:\Users\vbhadauria\OneDrive - Microsoft\Desktop\My Resume\portfolio"
-.\deploy-to-github.ps1
-```
-This interactive script will guide you through the entire deployment process!
-
 ### Full Deployment Guide
 
 See [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) for complete step-by-step instructions.
@@ -156,17 +155,23 @@ Upload files to any web hosting service (GoDaddy, Bluehost, etc.)
 
 ## 🔧 Local Testing
 
-Simply open `index.html` in any modern web browser:
-- Double-click the file, or
-- Right-click → Open with → Your browser
+This is an SPA that loads page partials via `fetch()`, so a local HTTP server is required:
 
-No server required for basic testing!
+1. Run the **Serve Portfolio Locally** VS Code task, or:
+   ```
+   cd portfolio
+   python -m http.server 8000
+   ```
+2. Open http://localhost:8000
+
+> **Note:** Double-clicking `index.html` won't work due to CORS restrictions on `fetch()` from `file://` URLs.
 
 ## 📝 Credits
 
-- Template: Based on [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio)
+- Original template: Based on [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio)
 - Icons: Ionicons
-- Fonts: Google Fonts (Poppins)
+- Fonts: Google Fonts (Inter)
+- CSS Framework: Tailwind CSS (CDN)
 
 ## 📄 License
 
@@ -174,4 +179,4 @@ Feel free to use this portfolio for your personal use. Remember to customize it 
 
 ---
 
-**Built with ❤️ for Vinay Singh**
+**Built with ❤️ for Vinay Pratap Singh**
