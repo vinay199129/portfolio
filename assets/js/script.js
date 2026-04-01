@@ -53,9 +53,11 @@ function navigateToPage(pageName) {
     if (pageName === pages[j].dataset.page) {
       pages[j].classList.add("active");
       navigationLinks[j].classList.add("active");
+      navigationLinks[j].setAttribute("aria-current", "page");
     } else {
       pages[j].classList.remove("active");
       navigationLinks[j].classList.remove("active");
+      navigationLinks[j].removeAttribute("aria-current");
     }
   }
   window.scrollTo(0, 0);
@@ -246,9 +248,11 @@ document.addEventListener("click", function (e) {
   document.querySelectorAll("[data-gallery-filter]").forEach(function (b) {
     b.classList.remove("bg-brand", "text-white");
     b.classList.add("bg-slate-100", "text-slate-600");
+    b.setAttribute("aria-pressed", "false");
   });
   btn.classList.remove("bg-slate-100", "text-slate-600");
   btn.classList.add("bg-brand", "text-white");
+  btn.setAttribute("aria-pressed", "true");
 
   document.querySelectorAll("[data-gallery-category]").forEach(function (item) {
     item.style.display = (filter === "all" || item.dataset.galleryCategory === filter) ? "" : "none";
@@ -270,6 +274,7 @@ document.addEventListener("click", function (e) {
   if (saved === "dark") {
     document.body.setAttribute("data-theme", "dark");
     icon.setAttribute("name", "sunny-outline");
+    toggle.setAttribute("aria-label", "Switch to light mode");
   }
 
   toggle.addEventListener("click", function () {
@@ -277,10 +282,12 @@ document.addEventListener("click", function (e) {
     if (isDark) {
       document.body.removeAttribute("data-theme");
       icon.setAttribute("name", "moon-outline");
+      toggle.setAttribute("aria-label", "Switch to dark mode");
       localStorage.setItem("theme", "light");
     } else {
       document.body.setAttribute("data-theme", "dark");
       icon.setAttribute("name", "sunny-outline");
+      toggle.setAttribute("aria-label", "Switch to light mode");
       localStorage.setItem("theme", "dark");
     }
   });

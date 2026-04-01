@@ -22,13 +22,16 @@ function initCounters() {
 }
 
 // Cert carousel auto-scroll - called after Resume page loads
+let _carouselInterval = null;
+
 function initCertCarousel() {
   const el = document.getElementById('certCarousel');
   if (!el) return;
+  if (_carouselInterval) clearInterval(_carouselInterval);
   let paused = false;
   el.addEventListener('mouseenter', () => paused = true);
   el.addEventListener('mouseleave', () => paused = false);
-  setInterval(() => {
+  _carouselInterval = setInterval(() => {
     if (paused) return;
     if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 4) {
       el.scrollTo({ left: 0, behavior: 'smooth' });
