@@ -37,6 +37,11 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 if (sidebarBtn && sidebar) {
   sidebarBtn.addEventListener("click", function () {
     sidebar.classList.toggle("active");
+    var contacts = document.getElementById("contacts-list");
+    if (contacts) {
+      contacts.classList.toggle("hidden");
+      contacts.classList.toggle("block");
+    }
   });
 }
 
