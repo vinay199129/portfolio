@@ -48,7 +48,7 @@ if (sidebarBtn && sidebar) {
 
 // =============================================
 // PAGE NAVIGATION & HASH-BASED ROUTING
-// Supports #about, #resume, #portfolio, #gallery
+// Supports #about, #resume, #projects, #gallery
 // =============================================
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
