@@ -3,7 +3,7 @@
 ## ✅ What's Been Created
 
 Your portfolio is live at:
-`https://vinay199129.github.io/portfolio/`
+`https://vinay-p-singh.github.io/portfolio/`
 
 ### Files:
 - ✅ `index.html` - Main SPA shell (loads page partials dynamically)
@@ -34,7 +34,7 @@ Your portfolio is live at:
 ## 🚀 Next Steps (IMPORTANT):
 
 ### 1. View Your Portfolio
-- **Live site:** https://vinay199129.github.io/portfolio/
+- **Live site:** https://vinay-p-singh.github.io/portfolio/
 - **Local testing:** Run the `Serve Portfolio Locally` VS Code task, then open http://localhost:8000
 
 ### 2. Replace Placeholder Images (Critical):

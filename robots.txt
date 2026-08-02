@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vinay199129.github.io/portfolio/sitemap.xml
+Sitemap: https://vinay-p-singh.github.io/portfolio/sitemap.xml
