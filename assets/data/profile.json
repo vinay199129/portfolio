@@ -1,0 +1,351 @@
+{
+  "name": "Vinay Pratap Singh",
+  "headline": "AI & Cloud Architect | Agentic AI, Azure & Enterprise Platforms",
+  "summary": "AI and cloud architecture professional with 14 years of enterprise delivery experience. Designs Azure and GenAI solutions with evaluation, observability, and governance, while leading teams through architecture and delivery trade-offs. Combines hands-on engineering with AI enablement and technical leadership.",
+  "highlights": [
+    {
+      "value": "3×",
+      "label": "Faster invoice processing",
+      "detail": "Invoice automation delivered across two business units.",
+      "projectId": "invoice-intelligence"
+    },
+    {
+      "value": "~20,000",
+      "label": "Procurement documents",
+      "detail": "RAG-based procurement intelligence for approximately 300 users.",
+      "projectId": "procurement-rag"
+    },
+    {
+      "value": "20M+",
+      "label": "Vehicles on supported platform",
+      "detail": "Delivery and reliability leadership for a global connected-vehicle ecosystem.",
+      "projectId": "connected-vehicles"
+    }
+  ],
+  "selectedProjectIds": ["invoice-intelligence", "procurement-rag", "connected-vehicles"],
+  "showcaseProjectIds": ["agentic-knowledge-support"],
+  "expertise": [
+    {
+      "title": "AI & Agentic Systems",
+      "description": "Enterprise RAG and multi-agent systems with AI evaluation, agent observability, and governance."
+    },
+    {
+      "title": "Cloud & Enterprise Platforms",
+      "description": "Azure architecture, event-driven integration, production reliability, and delivery-risk and cost trade-offs."
+    },
+    {
+      "title": "Technical Leadership",
+      "description": "Cross-functional delivery leadership, executive stakeholder engagement, mentoring, and applied AI enablement."
+    }
+  ],
+  "contact": {
+    "email": "vinay199129@gmail.com",
+    "phone": "+91 8557989106",
+    "location": "India",
+    "linkedin": "https://www.linkedin.com/in/vinay-p-singh/",
+    "github": "https://github.com/vinay-p-singh",
+    "portfolio": "https://vinay-p-singh.github.io/portfolio/",
+    "credly": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"
+  },
+  "skills": [
+    {
+      "category": "Architecture & Design",
+      "items": ["Enterprise Azure architecture", "Cloud-native and serverless platforms", "Event-driven and distributed systems", "Integration architecture", "Well-Architected reviews", "Security and governance", "Observability", "Cost and delivery-risk trade-offs"]
+    },
+    {
+      "category": "AI & Agentic Systems",
+      "items": ["Agentic AI", "RAG", "Multi-agent systems", "LangGraph", "CrewAI", "Semantic Kernel", "LangChain", "Microsoft Agent Framework", "Model Context Protocol (MCP)", "ReAct", "Chunking and embeddings", "AI evaluation", "Agent observability", "Agent Governance Toolkit", "Responsible AI", "Copilot Studio", "Microsoft 365 Agents SDK"]
+    },
+    {
+      "category": "Azure & Cloud Platform",
+      "items": ["Azure OpenAI", "Azure AI Foundry", "Azure AI Search", "Azure ML", "Azure Functions", "Logic Apps", "Azure Data Factory", "Service Bus", "IoT Hub", "Azure Data Explorer / Kusto", "Microsoft Graph Data Connect", "Microsoft Purview", "Entra ID", "Service Fabric"]
+    },
+    {
+      "category": "Engineering",
+      "items": ["Python", "FastAPI", "Flask", "C# / .NET Core", "ASP.NET MVC / Web API", "REST APIs", "Microservices", "React.js", "Angular", "SQL", "Docker", "Kubernetes", "SAP integration"]
+    },
+    {
+      "category": "Delivery & Operations",
+      "items": ["Agile / Scrum", "Azure DevOps", "CI/CD", "DevSecOps", "MLOps", "Terraform", "SLA/SLO ownership", "Incident management", "Telemetry-driven monitoring", "Datadog"]
+    },
+    {
+      "category": "Applied AI Study",
+      "items": ["PyTorch", "HuggingFace Transformers", "Model training", "Fine-tuning", "Evaluation"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Microsoft India Private Ltd.",
+      "title": "Technical Lead / Architect",
+      "period": "Dec 2021 – Present",
+      "summary": "Architecture and delivery across enterprise and government engagements in automotive, manufacturing, insurance, CPG, payroll, energy, and the public sector.",
+      "bullets": [
+        "Owned solution design and technology selection; led cross-functional Agile teams of 6–10 engineers and managed executive stakeholder relationships.",
+        "Applied AI evaluation and observability across multiple projects; guided security, governance, performance, cost, and delivery-risk decisions.",
+        "Provided technical leadership and cross-team influence across 40+ engineers on delivery and reliability work for a connected-vehicle platform."
+      ]
+    },
+    {
+      "company": "SD Global Services",
+      "title": "Technical Lead",
+      "period": "Jul 2020 – Dec 2021",
+      "summary": "Contributed to the architecture and development of an AI-assisted hiring platform within a 20-member engineering team.",
+      "bullets": [
+        "Contributed React.js interfaces alongside backend services, model integrations, API contracts, and interview data flows.",
+        "Supported bias-aware evaluation workflows and secure handling of multimodal interview data."
+      ]
+    },
+    {
+      "company": "Intersoft Data Labs",
+      "title": "Senior Analyst",
+      "period": "Jun 2012 – Jul 2020",
+      "summary": "Progressed from developer to senior analyst over eight years, delivering enterprise web and integration solutions across manufacturing, retail, and services.",
+      "bullets": [
+        "Owned delivery of client-facing platforms on .NET, Azure, and SQL; standardised REST API and microservices patterns.",
+        "Mentored junior engineers and led technical delivery across concurrent, multi-team engagements."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "invoice-intelligence",
+      "title": "Invoice Intelligence & Audit Automation",
+      "category": "Enterprise AI",
+      "industry": "Manufacturing",
+      "summary": "Multi-agent invoice and audit processing with SAP integration across two business units.",
+      "role": "Architecture and delivery lead, from pilot to production.",
+      "approach": [
+        "Used multi-agent workflows with SAP integration and in-flight document processing without persistent document storage to address security and compliance requirements.",
+        "Combined Azure OpenAI, Document Intelligence, Azure Functions, and Python."
+      ],
+      "outcomes": [
+        "Processed 200–400 invoices/day across two business units.",
+        "Reported 3× faster processing and improved audit turnaround."
+      ],
+      "technologies": ["Azure OpenAI", "SAP", "Multi-agent systems", "Document Intelligence", "Azure Functions", "Python"],
+      "stage": "Production"
+    },
+    {
+      "id": "governed-marketplace",
+      "title": "Governed Data & Services Marketplace",
+      "category": "Data & Governance",
+      "industry": "Public Sector",
+      "summary": "Secure data migration and a reusable, governed data-services marketplace for two government entities.",
+      "role": "Solution architecture and delivery.",
+      "approach": [
+        "Migrated approximately 6 GB of enterprise data from Informatica Cloud to SQL platforms integrated with Microsoft Purview.",
+        "Implemented lineage tracking, access controls, and ongoing controlled data access."
+      ],
+      "outcomes": [
+        "Enabled a governed, reusable data-services marketplace for two government entities."
+      ],
+      "technologies": ["Microsoft Purview", "Azure SQL", "Azure Data Factory", "Entra ID"],
+      "stage": "Enterprise engagement"
+    },
+    {
+      "id": "procurement-rag",
+      "title": "Procurement Intelligence Platform",
+      "category": "Enterprise AI",
+      "industry": "CPG",
+      "summary": "RAG-based procurement intelligence for approximately 300 users across approximately 20,000 documents.",
+      "role": "Architecture and delivery; evaluated fine-tuning versus RAG trade-offs.",
+      "approach": [
+        "Delivered document intelligence, contract comparison, issue detection, and renewal workflows using RAG on Azure AI Foundry.",
+        "Evaluated fine-tuning versus RAG to balance model accuracy against retrieval cost."
+      ],
+      "outcomes": [
+        "Enabled approximately 300 users to work with approximately 20,000 procurement documents.",
+        "Improved discoverability and supported faster approvals and reduced manual review."
+      ],
+      "technologies": ["Azure AI Foundry", "Azure OpenAI", "Azure AI Search", "RAG", "Python", "FastAPI"],
+      "stage": "Enterprise engagement"
+    },
+    {
+      "id": "plant-assistant",
+      "title": "Plant Operations & Knowledge Assistant",
+      "category": "Enterprise AI",
+      "industry": "Automotive",
+      "summary": "AI-powered Teams assistant supporting approximately 50 plants operating four shifts per day.",
+      "role": "Solution architect and delivery lead.",
+      "approach": [
+        "Enabled document-driven knowledge access, event-driven speech-to-text, alerts, and workflow initiation in Teams."
+      ],
+      "outcomes": [
+        "Supported approximately 50 plants across four shifts per day.",
+        "Improved operational responsiveness, issue resolution, and access to knowledge with less supervisor dependency."
+      ],
+      "technologies": ["Azure OpenAI", "Teams SDK", "Speech Services", "Azure Functions"],
+      "stage": "Enterprise engagement"
+    },
+    {
+      "id": "email-ingestion",
+      "title": "Enterprise Email Data Ingestion",
+      "category": "Data & Governance",
+      "industry": "Payroll",
+      "summary": "Compliance-driven email ingestion proof of concept with a scope of approximately 20,000 mailboxes.",
+      "role": "Delivered the ingestion solution and proof-of-concept architecture.",
+      "approach": [
+        "Used Microsoft Graph Data Connect to address privacy and regulatory requirements.",
+        "Designed the proof-of-concept architecture for enterprise-wide reuse."
+      ],
+      "outcomes": [
+        "Established a reusable proof-of-concept ingestion approach for an approximately 20,000-mailbox scope."
+      ],
+      "technologies": ["Microsoft Graph Data Connect", "Azure Data Factory", "Azure SQL"],
+      "stage": "Proof of concept"
+    },
+    {
+      "id": "claims-processing",
+      "title": "Claims Summarisation & Validation",
+      "category": "Enterprise AI",
+      "industry": "Insurance",
+      "summary": "AI-assisted claim summarisation and validation for a global insurance broker.",
+      "role": "Delivered AI summarisation and validation workflows.",
+      "approach": [
+        "Applied standardised, reusable AI patterns to claim summarisation and validation."
+      ],
+      "outcomes": [
+        "Improved summarisation time, accuracy, and consistency while maintaining enterprise reliability."
+      ],
+      "technologies": ["Azure OpenAI", "Semantic Kernel", "Python", "Azure Functions"],
+      "stage": "Enterprise engagement"
+    },
+    {
+      "id": "connected-vehicles",
+      "title": "Connected Vehicle Platform",
+      "category": "Cloud Platform",
+      "industry": "Automotive",
+      "summary": "Continuous delivery, production stability, and support for a global ecosystem serving 20M+ vehicles and approximately 2M telemetry messages/minute.",
+      "role": "Delivery and reliability leadership, with technical influence across 40+ engineers.",
+      "approach": [
+        "Managed platform updates, production support, telemetry-driven monitoring, and incident management across global regions.",
+        "Worked with IoT Hub, Azure Data Explorer / Kusto, Service Fabric, Datadog, and Azure Functions."
+      ],
+      "outcomes": [
+        "Supported delivery and reliability for an ecosystem serving 20M+ vehicles and approximately 2M telemetry messages/minute.",
+        "Provided technical leadership and cross-team influence across 40+ engineers."
+      ],
+      "technologies": ["IoT Hub", "Azure Data Explorer / Kusto", "Service Fabric", "Datadog", "Azure Functions"],
+      "stage": "Production"
+    },
+    {
+      "id": "hr-assistant",
+      "title": "Enterprise HR AI Assistant",
+      "category": "Enterprise AI",
+      "industry": "Enterprise",
+      "summary": "Enterprise HR assistant built with Microsoft 365 Agents SDK for employee questions about policies, benefits, and compliance.",
+      "role": "Designed and delivered the assistant.",
+      "approach": [
+        "Built the conversational interface with Microsoft 365 Agents SDK and grounded responses in enterprise knowledge bases using RAG."
+      ],
+      "outcomes": [
+        "Enabled employees to query HR policies, benefits, and compliance information through natural language."
+      ],
+      "technologies": ["Microsoft 365 Agents SDK", "Azure OpenAI", "RAG", "Semantic Kernel", "React.js"],
+      "stage": "Enterprise engagement"
+    },
+    {
+      "id": "hiring-platform",
+      "title": "AI-Assisted Hiring Platform",
+      "category": "Enterprise AI",
+      "industry": "HR Tech",
+      "summary": "React.js-based enterprise interviews and assessments with AI-assisted evaluation and on-demand video/audio workflows.",
+      "role": "Architecture and development contributor within a 20-member engineering team.",
+      "approach": [
+        "Combined React.js interfaces with backend services, model integrations, and API contracts for interview and assessment workflows.",
+        "Supported secure handling of concurrent multimodal interview sessions."
+      ],
+      "outcomes": [
+        "Delivered backend capabilities for enterprise interviews and assessments."
+      ],
+      "technologies": ["React.js", "C# / .NET Core", "AI/ML models", "Azure Functions"],
+      "stage": "Enterprise engagement"
+    },
+    {
+      "id": "agentic-knowledge-support",
+      "title": "Agentic Knowledge & Support Platform",
+      "category": "Enterprise AI",
+      "industry": "Cross-industry",
+      "summary": "A reusable support assistant pattern using Microsoft 365 Agents SDK, grounded retrieval, tool-driven workflows, and an Agent Governance Toolkit.",
+      "role": "Architecture capability illustration, presented independently of any customer implementation.",
+      "approach": [
+        "Separate the Microsoft 365 Agents SDK conversation interface from a replaceable reasoning engine, combining knowledge retrieval with bounded, multi-step workflows.",
+        "Keep the knowledge base current through incremental ingestion and durable background synchronization.",
+        "Apply the Agent Governance Toolkit alongside scoped retrieval and managed identity, with conversation state, tool-level tracing, and offline evaluation."
+      ],
+      "outcomes": [
+        "Illustrates agent evaluation, observability, conversation state, and knowledge synchronization.",
+        "Demonstrates an end-to-end architecture for grounded assistance and structured support triage without claiming customer-specific results."
+      ],
+      "technologies": ["Microsoft 365 Agents SDK", "Microsoft Agent Framework", "Agent Governance Toolkit", "Azure AI Search", "Azure Functions", "Python", "OpenTelemetry"],
+      "stage": "Architecture showcase"
+    }
+  ],
+  "leadership": [
+    "Led and contributed to Microsoft's AI Apprentice and AI Mastery programmes, designing curriculum and delivering sessions for 80+ engineers and consultants across 10 cohorts.",
+    "Delivered AI project-readiness training to 120+ participants.",
+    "Delivered Tech/Delivery Lead Readiness sessions and designed foundational Python and AI project-readiness skilling programmes.",
+    "Mentors developers and aspiring technical leads; recurring speaker on Azure AI, GenAI architecture, RAG, and Copilot extensibility."
+  ],
+  "education": [
+    {
+      "degree": "M.Tech — Artificial Intelligence & Machine Learning",
+      "institution": "BITS Pilani",
+      "period": "In progress · Expected Dec 2027",
+      "detail": "Study includes deep neural networks, mathematical foundations for machine learning, and practical model training, fine-tuning, and evaluation with PyTorch and HuggingFace Transformers."
+    },
+    {
+      "degree": "B.Tech — Computer Science & Engineering",
+      "institution": "Gautam Buddha Technical University",
+      "period": "2012",
+      "detail": "Foundation in computer science, software engineering, algorithms, and system design."
+    }
+  ],
+  "certifications": [
+    {"name": "Microsoft Certified: Azure Solutions Architect Expert", "code": "AZ-305", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Agentic AI Business Solutions Architect", "code": "AB-100", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Azure AI Apps and Agents Developer Associate", "code": "AI-103", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Azure AI Engineer Associate", "code": "AI-102", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: DevOps Engineer Expert", "code": "AZ-400", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "GitHub Copilot", "code": "GitHub Copilot", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Azure Developer Associate", "code": "AZ-204", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Azure Administrator Associate", "code": "AZ-104", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals", "code": "SC-900", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Azure Fundamentals", "code": "AZ-900", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: Azure AI Fundamentals", "code": "AI-900 / AI-901", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: AI Business Professional", "code": "AB-730", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"},
+    {"name": "Microsoft Certified: AI Transformation Leader", "code": "AB-731", "url": "https://www.credly.com/users/vinay-pratap-singh-bhadauria/badges"}
+  ],
+  "awards": [
+    {"organization": "Microsoft", "items": ["Innovation Collective Star Performer — FY25", "Best Consultant — FY24 H2", "Extra Mile Award — FY22 Q3"]},
+    {"organization": "SD Global Services", "items": ["Excellence of the Quarter — Q3 2020, Q4 2020, Q1 2021"]},
+    {"organization": "Intersoft Data Labs", "items": ["Star Performer of the Year — 2015 and 2017", "Star Performer of the Quarter — Q1 2016 and Q3 2018"]}
+  ],
+  "resume": {
+    "originalFileHashes": {
+      "Vinay_Singh_MS.docx": "8c899734880f57bbfefdc2e548c276dd00a7ed3125ff1e3e86f8ad4ed9eaff08",
+      "Vinay_Singh_UAE_v5.docx": "2a347a56bd56fd04d595d2ddc68d7e02ea198ead6ffd8c97f262623484daaf4a",
+      "Vinay_Singh.pdf": "9cb9ebbb93c778fd1f1c9d720b5c214fee21ba0711d5d122da785398ed53e298",
+      "Vinay_Singh_UAE_v5.pdf": "f58ed6466765bafd6e4153dcf3c3b684ab9bbc78f380a8ec2549eb993b19e759"
+    },
+    "selectedProjectIds": ["invoice-intelligence", "procurement-rag", "plant-assistant", "connected-vehicles"],
+    "selectedCertificationCodes": ["AZ-305", "AB-100", "AI-103", "AI-102", "AZ-400", "GitHub Copilot"],
+    "skillSelections": [
+      {"category": "Architecture & Design", "items": ["Enterprise Azure architecture", "Event-driven and distributed systems", "Well-Architected reviews", "Security and governance"]},
+      {"category": "AI & Agentic Systems", "items": ["Agentic AI", "RAG", "Multi-agent systems", "LangGraph", "Semantic Kernel", "Microsoft Agent Framework", "Model Context Protocol (MCP)", "ReAct", "Copilot Studio", "AI evaluation", "Responsible AI"]},
+      {"category": "Azure & Cloud Platform", "items": ["Azure OpenAI", "Azure AI Foundry", "Azure AI Search", "Azure Functions", "Microsoft Purview"]},
+      {"category": "Engineering", "items": ["Python", "FastAPI", "C# / .NET Core", "React.js", "REST APIs"]},
+      {"category": "Delivery & Operations", "items": ["Azure DevOps", "CI/CD", "DevSecOps", "MLOps", "Terraform", "Incident management"]}
+    ],
+    "credentialNote": "Credential names are normalised from the source resumes and portfolio. Links open the public Credly profile, not individual credential verification; earned dates, expiry dates, and current status have not been independently verified.",
+    "sourceNotes": [
+      "The headline expresses professional positioning, not an official employer title.",
+      "The invoice 3× figure is source-reported; its measurement baseline is unspecified.",
+      "Connected-vehicle scale describes the supported platform, not sole architecture ownership or a personal throughput benchmark.",
+      "The 40+ figure is cross-team technical influence; 6–10 is the cross-functional delivery-team size.",
+      "Email ingestion is a proof of concept; the 20,000-mailbox figure is scope, not a verified production rollout.",
+      "AI-900 and AI-901 are exam codes associated with Azure AI Fundamentals, grouped to avoid presenting the same certification twice.",
+      "Client identities remain anonymous. Original resumes are preserved unchanged."
+    ]
+  }
+}

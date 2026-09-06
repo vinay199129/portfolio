@@ -1,182 +1,82 @@
-# Vinay Pratap Singh - Personal Portfolio
+# Vinay Pratap Singh - Portfolio
 
-A modern, responsive personal portfolio website showcasing your professional experience, skills, and projects.
+A static, single-page portfolio for enterprise AI and cloud architecture. It uses
+plain HTML, CSS, and JavaScript: no runtime CSS compiler, web-font download, or
+front-end package installation is required.
 
-## 🚀 Features
+## Content synchronization
 
-- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional dark theme with smooth animations
-- **Interactive Navigation**: Easy-to-use navigation between different sections
-- **Portfolio Showcase**: Display your major projects with filtering capabilities
-- **Contact Form**: Built-in contact form for easy communication
-- **Skills Visualization**: Visual representation of technical skills with progress bars
+`assets\data\profile.json` is the shared source for the professional headline,
+summary, contact details, project outcomes, skills, career history, credentials,
+education, and awards. The About, Projects, and Resume views render this data.
+`showcaseProjectIds` selects capability illustrations, explicitly labeled
+as architecture showcases on the website, not as client
+delivery achievements. Keep these summaries abstract and free of customer
+identities, internal URLs, operational parameters, and proprietary details.
 
-## 📁 Structure
+Update the JSON first, then refresh search metadata and the JavaScript-free
+fallback from this directory:
 
-```
-portfolio/
-├── index.html              # SPA shell (loads pages dynamically via fetch)
-├── pages/                  # Page partials injected into index.html
-│   ├── about.html
-│   ├── resume.html
-│   ├── portfolio.html
-│   └── gallery.html
-├── assets/
-│   ├── css/
-│   │   └── style.css      # Styling
-│   ├── js/
-│   │   ├── script.js      # SPA navigation & interactions
-│   │   └── counters.js    # Animated counters
-│   └── images/
-│       ├── profile-pic.jpg # Profile picture
-│       ├── project-*.svg   # Project icons (placeholders)
-│       ├── *.svg           # Icon files
-│       └── gallery/        # Event & speaking photos
-│           └── thumbs/     # Optimized thumbnails
-└── README.md
+```powershell
+python scripts\sync_site.py
 ```
 
-## 🎨 Sections
+Synchronization uses only the Python standard library. Keep the metadata,
+fallback, and content source together in any deployment. Missing or unconfirmed
+skills must not be published as claimed experience.
 
-1. **About**: Professional summary, expertise areas, and impact counters
-2. **Resume**: Technical skills, experience timeline, and certifications
-3. **Portfolio**: 9 NDA-compliant enterprise projects with category filtering
-4. **Gallery**: Speaking engagements, events, and workshop photos with LinkedIn post links
+Downloadable resumes are deferred to a separate release. The Resume section
+currently presents experience and credentials on the website only. Local resume
+drafts and generation tooling are not part of this release; do not overwrite
+existing source resumes or publish draft downloads.
 
-## ⚠️ NDA Compliance
+## Local preview
 
-This portfolio has been designed with NDA compliance in mind:
-- ✅ No specific customer/client names mentioned
-- ✅ Generic project descriptions (e.g., "Enterprise HR AI Assistant" instead of client names)
-- ✅ Focus on technical accomplishments and architectures
-- ✅ Employer names generalized in experience section
+From the parent workspace, run the **Serve Portfolio Locally** VS Code task.
+Alternatively, from this directory:
 
-Projects showcase:
-- Enterprise HR AI Assistant
-- AI-Driven Invoice Processing
-- Data Governance Platform
-- AI Procurement Platform
-- Operations AI Assistant
-- Connected Vehicle Platform
-- Enterprise Email Data Platform
-- AI Claims Processing
-- AI-Enabled Hiring Platform
+```powershell
+python -m http.server 8000 --bind 127.0.0.1
+```
 
-## ✏️ Customization Guide
+Open `http://localhost:8000`. A local HTTP server is required because content is
+loaded with `fetch()`; opening `index.html` through `file://` is unsupported.
 
-### 1. Replace Placeholder Images
+Before publishing, review the home page, all five navigation sections,
+project dialogs, filters, keyboard navigation, light/dark themes, and
+desktop/tablet/mobile layouts. Push only after approving the local presentation.
 
-**Profile Picture**:
-- Replace `assets/images/my-avatar.png` with your professional photo
-- Recommended size: 150x150px
+## Structure
 
-**Project Screenshots**:
-- Replace the placeholder project images (`project-1.jpg` through `project-9.jpg`)
-- Recommended size: 400x300px or similar aspect ratio
-- Use generic screenshots that don't reveal client-specific information
+| Path | Purpose |
+|---|---|
+| `index.html` | Accessible page shell, navigation, metadata, and project dialog |
+| `pages\*.html` | Root-relative partials: About, Projects, Resume, Resources, Gallery |
+| `assets\data\profile.json` | Shared professional content |
+| `assets\js\script.js` | Content rendering, hash routing, filters, and dialogs |
+| `assets\js\theme.js` | Initial theme selection before rendering |
+| `assets\css\style.css` | Responsive styles, theme tokens, reduced-motion and print support |
+| `assets\images\gallery\thumbs` | Small grid images; originals load only when opened |
+| `scripts\sync_site.py` | Shared-data metadata and JavaScript-free fallback |
 
-**Award/Company Logos**:
-- Replace `microsoft-logo.png`, `award-icon.png`, `excellence-icon.png` with actual logos
-- Or keep generic if preferred for NDA compliance
+Partials are injected into `index.html`, so asset URLs in them must start with
+`./assets/`, **not** `../assets/`. Navigation uses fragments such as `#projects`;
+page partials are not standalone destinations.
 
-### 2. Update Contact Information
+The ink-and-brass palette uses ivory surfaces in light mode and layered ink
+surfaces with warm highlights in dark mode. The theme follows the system preference, supports an explicit
+`?scoutTheme=light` or `?scoutTheme=dark` override, and remembers manual selection
+when browser storage is available. Project dialogs support keyboard navigation,
+Escape, and focus restoration.
 
-In `index.html`, update:
-- Email address (line ~79): `vinay199129@gmail.com` → your actual email
-- Phone number (line ~91): `+91 (855) 798-9106` → your actual phone
-- Social media links (lines ~130-150): Update LinkedIn, GitHub, Twitter URLs
+## Publishing and content care
 
-### 3. Customize Content
+Publish this directory to GitHub Pages. There is no front-end build step.
+Client names are anonymized, but anonymization alone is not a guarantee of NDA
+compliance; review project details and metrics for permission before publication.
+Do not infer credentials, job titles, outcomes, or tool expertise from a target
+job description. Add them only when supported by actual experience.
 
-**About Section**:
-- Currently uses your professional summary from resume
-- Edit if you want different text for web vs document
-
-**Services Section**:
-- Highlights: Azure Architecture, GenAI & AI Solutions, Platform Engineering, Technical Leadership
-- Modify in HTML if you want to emphasize different areas
-
-**Portfolio Projects**:
-- Currently includes 9 NDA-compliant project descriptions
-- Categories: Enterprise AI, Cloud Platform, Data & Governance
-- Add/remove/modify projects as needed while maintaining NDA compliance
-
-### 4. Map Location
-
-Update the Google Maps embed (line ~1145):
-- Current: Delhi, India (generic)
-- Replace with your actual location or remove if preferred
-
-### 5. Favicon
-
-Create and add a favicon:
-- Place `logo.ico` in `assets/images/`
-- Or update line 13 in index.html to point to your favicon
-
-## 🚚 Deployment
-
-### Full Deployment Guide
-
-See [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) for complete step-by-step instructions.
-
-### Option 1: GitHub Pages (Recommended - Free)
-
-1. Create a new GitHub repository
-2. Push your portfolio folder to the repository
-3. Go to Settings → Pages
-4. Select main branch as source
-5. Your site will be live at: `https://yourusername.github.io/repository-name`
-
-### Option 2: Netlify (Easy - Free)
-
-1. Sign up at netlify.com
-2. Drag and drop your portfolio folder
-3. Site goes live immediately with a custom URL
-
-### Option 3: Vercel (Modern - Free)
-
-1. Sign up at vercel.com
-2. Import your project
-3. Deploy with one click
-
-### Option 4: Traditional Hosting
-
-Upload files to any web hosting service (GoDaddy, Bluehost, etc.)
-
-## 🎯 Next Steps
-
-1. ✅ Portfolio structure created
-2. ⬜ Replace placeholder images with real ones
-3. ⬜ Update contact information
-4. ⬜ Customize content as needed
-5. ⬜ Test locally by opening `index.html` in a browser
-6. ⬜ Deploy to your preferred hosting platform
-7. ⬜ Share your portfolio URL!
-
-## 🔧 Local Testing
-
-This is an SPA that loads page partials via `fetch()`, so a local HTTP server is required:
-
-1. Run the **Serve Portfolio Locally** VS Code task, or:
-   ```
-   cd portfolio
-   python -m http.server 8000
-   ```
-2. Open http://localhost:8000
-
-> **Note:** Double-clicking `index.html` won't work due to CORS restrictions on `fetch()` from `file://` URLs.
-
-## 📝 Credits
-
-- Original template: Based on [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio)
-- Icons: Ionicons
-- Fonts: Google Fonts (Inter)
-- CSS Framework: Tailwind CSS (CDN)
-
-## 📄 License
-
-Feel free to use this portfolio for your personal use. Remember to customize it to reflect your own professional brand!
-
----
-
-**Built with ❤️ for Vinay Pratap Singh**
+The original portfolio was based on
+[vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio).
+The current presentation uses locally served, semantic markup and shared data.

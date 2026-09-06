@@ -1,210 +1,83 @@
-
-          <header class="mb-10">
-            <h2 class="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Gallery</h2>
-            <div class="h-1.5 w-16 bg-gradient-to-r from-brand to-brand-light rounded-full"></div>
-          </header>
-
-          <p class="text-slate-600 text-sm leading-relaxed mb-8">Snapshots from community speaking engagements, award ceremonies, and tech events.</p>
-
-          <!-- Filter Buttons -->
-          <div class="flex flex-wrap gap-2 mb-8">
-            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-brand text-white" data-gallery-filter="all">All</button>
-            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="speaking">Speaking</button>
-            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="events">Events</button>
-            <button class="px-4 py-1.5 text-xs font-semibold rounded-full bg-slate-100 text-slate-600 hover:bg-brand hover:text-white transition-colors" data-gallery-filter="workshop">Workshop</button>
-          </div>
-
-          <!-- Photo Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
-
-            <!-- SPEAKING -->
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
-              <img src="./assets/images/gallery/speaking-closeup.jpg" alt="Speaking close-up with mic at panel discussion" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Panel Speaker</p>
-                  <p class="text-white/70 text-xs">Speaking · 2026</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/speaking-keynote.jpg" alt="SabkaAI Keynote at AI Impact Summit 2026" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">SabkaAI Keynote</p>
-                    <p class="text-white/70 text-xs">Speaking · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/speaking-stage-presummit.jpg" alt="On stage at CoE DSAI SabkaAI Pre-Summit event" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">Pre-Summit Stage</p>
-                    <p class="text-white/70 text-xs">Speaking · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/panel-seated-discussion.jpg" alt="Seated panel discussion at TIET-UQ CoE DSAI" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">Panel Discussion</p>
-                    <p class="text-white/70 text-xs">Speaking · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking">
-              <img src="./assets/images/gallery/panel-standing-stage.jpg" alt="Panelists standing together on stage" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Panelists on Stage</p>
-                  <p class="text-white/70 text-xs">Speaking · 2026</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_microsoft-mcapstechconnect-ai-activity-730164334368227">
-              <img src="./assets/images/gallery/speaking-techconnect.jpg" alt="Presenting at Microsoft MCAPS Tech Connect event" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">MCAPS Tech Connect</p>
-                    <p class="text-white/70 text-xs">Speaking · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_microsoft-mcapstechconnect-ai-activity-730164334368227" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="speaking" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_rahul-azureai-microsoftcopilot-activity-74033199437585">
-              <img src="./assets/images/gallery/speaking-mody-university.jpg" alt="Speaking to a packed auditorium at Mody University" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">Mody University Talk</p>
-                    <p class="text-white/70 text-xs">Speaking · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_rahul-azureai-microsoftcopilot-activity-74033199437585" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- EVENTS -->
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/event-group-ai-summit.jpg" alt="Group photo at AI Impact Summit 2026" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">AI Summit Group Photo</p>
-                    <p class="text-white/70 text-xs">Events · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
-              <img src="./assets/images/gallery/event-formal-group.jpg" alt="Formal group photo with dignitaries" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">With Dignitaries</p>
-                  <p class="text-white/70 text-xs">Events · 2026</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/event-prize-ceremony.jpg" alt="Prize ceremony at SabkaAI hackathon" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">Hackathon Prize Ceremony</p>
-                    <p class="text-white/70 text-xs">Events · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/event-panel.jpg" alt="Panel at AI Impact Summit with COE DSAI" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">AI Impact Summit Panel</p>
-                    <p class="text-white/70 text-xs">Events · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/event-sabkaai-booth.jpg" alt="SabkaAI for Inclusion pre-summit booth" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">SabkaAI Pre-Summit Booth</p>
-                    <p class="text-white/70 text-xs">Events · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events" data-linkedin-url="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4">
-              <img src="./assets/images/gallery/event-thapar-portrait.jpg" alt="At Thapar Institute of Engineering & Technology" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
-                  <div>
-                    <p class="text-white text-sm font-semibold">At Thapar Institute</p>
-                    <p class="text-white/70 text-xs">Events · 2026</p>
-                  </div>
-                  <a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAbpi0cB6jWAujmIVP1joBNuHkudKJFCIp4" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#0A66C2] rounded-full flex items-center justify-center text-white text-base hover:scale-110 transition-transform shrink-0" title="View LinkedIn Post"><ion-icon name="logo-linkedin"></ion-icon></a>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="events">
-              <img src="./assets/images/gallery/networking-handshake.jpg" alt="Professional networking at AI event" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Networking</p>
-                  <p class="text-white/70 text-xs">Events · 2026</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- WORKSHOP -->
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="workshop">
-              <img src="./assets/images/gallery/speaking-mentoring.jpg" alt="Mentoring session with students" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Mentoring Session</p>
-                  <p class="text-white/70 text-xs">Workshop · 2026</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="workshop">
-              <img src="./assets/images/gallery/speaking-discussion.jpg" alt="Workshop discussion with colleagues" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Workshop Discussion</p>
-                  <p class="text-white/70 text-xs">Workshop · 2026</p>
-                </div>
-              </div>
-            </div>
-            <div class="group relative rounded-2xl overflow-hidden border border-border bg-slate-50 aspect-[4/3]" data-gallery-category="workshop">
-              <img src="./assets/images/gallery/workshop-hackathon.jpg" alt="Hackathon workshop teaching session" width="400" height="300" class="w-full h-full object-cover" loading="lazy">
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div class="absolute bottom-0 left-0 right-0 p-4">
-                  <p class="text-white text-sm font-semibold">Hackathon Workshop</p>
-                  <p class="text-white/70 text-xs">Workshop · 2026</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+<header class="page-heading">
+  <p class="eyebrow">Gallery</p>
+  <h1>Speaking &amp; community</h1>
+  <p class="lead">Conversations, workshops, and shared learning across the technology community. Select a photo to open the original image in a new tab. LinkedIn event posts are included where a source reference is available.</p>
+</header>
+<div class="filters" role="group" aria-label="Filter gallery">
+  <button type="button" data-gallery-filter="all" aria-pressed="true">All</button>
+  <button type="button" data-gallery-filter="speaking" aria-pressed="false">Speaking</button>
+  <button type="button" data-gallery-filter="events" aria-pressed="false">Events</button>
+  <button type="button" data-gallery-filter="workshop" aria-pressed="false">Workshops</button>
+</div>
+<p id="gallery-count" class="result-count" role="status">17 photos</p>
+<div class="gallery-grid">
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/speaking-closeup.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: panel speaker (new tab)"><img src="./assets/images/gallery/thumbs/speaking-closeup.jpg" alt="Speaking with a microphone during a panel discussion" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>Panel speaker</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/speaking-keynote.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: SabkaAI keynote (new tab)"><img src="./assets/images/gallery/thumbs/speaking-keynote.jpg" alt="Delivering a SabkaAI keynote at AI Impact Summit" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>SabkaAI keynote</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/speaking-stage-presummit.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: pre-summit stage (new tab)"><img src="./assets/images/gallery/thumbs/speaking-stage-presummit.jpg" alt="On stage at the CoE DSAI SabkaAI Pre-Summit" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>SabkaAI pre-summit</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/panel-seated-discussion.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: panel discussion (new tab)"><img src="./assets/images/gallery/thumbs/panel-seated-discussion.jpg" alt="Seated panel discussion at TIET-UQ CoE DSAI" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>Panel discussion</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/panel-standing-stage.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: panelists on stage (new tab)"><img src="./assets/images/gallery/thumbs/panel-standing-stage.jpg" alt="Panelists together on stage" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>Panelists on stage</h2></figcaption>
+  </figure>
+  <!-- The recorded LinkedIn activity IDs for these two talks are incomplete; do not infer replacements. -->
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/speaking-techconnect.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: MCAPS Tech Connect (new tab)"><img src="./assets/images/gallery/thumbs/speaking-techconnect.jpg" alt="Presenting at Microsoft MCAPS Tech Connect" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>MCAPS Tech Connect</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="speaking">
+    <a href="./assets/images/gallery/speaking-mody-university.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: Mody University talk (new tab)"><img src="./assets/images/gallery/thumbs/speaking-mody-university.jpg" alt="Speaking to an auditorium at Mody University" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Speaking / 2026</p><h2>Mody University talk</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/event-group-ai-summit.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: AI Summit group (new tab)"><img src="./assets/images/gallery/thumbs/event-group-ai-summit.jpg" alt="Group photo at AI Impact Summit" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>AI Summit community</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/event-formal-group.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: formal group (new tab)"><img src="./assets/images/gallery/thumbs/event-formal-group.jpg" alt="Formal group photo with event dignitaries" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>With dignitaries</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/event-prize-ceremony.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: hackathon prize ceremony (new tab)"><img src="./assets/images/gallery/thumbs/event-prize-ceremony.jpg" alt="Prize ceremony at the SabkaAI hackathon" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>Hackathon prize ceremony</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/event-panel.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: AI Impact Summit panel (new tab)"><img src="./assets/images/gallery/thumbs/event-panel.jpg" alt="AI Impact Summit panel with CoE DSAI" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>AI Impact Summit panel</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/event-sabkaai-booth.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: SabkaAI booth (new tab)"><img src="./assets/images/gallery/thumbs/event-sabkaai-booth.jpg" alt="SabkaAI for Inclusion pre-summit booth" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>SabkaAI for Inclusion</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/event-thapar-portrait.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: Thapar Institute (new tab)"><img src="./assets/images/gallery/thumbs/event-thapar-portrait.jpg" alt="At Thapar Institute of Engineering and Technology" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>At Thapar Institute</h2><a href="https://www.linkedin.com/posts/vinay-p-singh_officialabrindiaabrpreabrsummit-aiabrimpactabrsummitabr2026-activity-7418517511748521984-PxaI" target="_blank" rel="noopener noreferrer">Event on LinkedIn &nearr;</a></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="events">
+    <a href="./assets/images/gallery/networking-handshake.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: community networking (new tab)"><img src="./assets/images/gallery/thumbs/networking-handshake.jpg" alt="Professional networking at an AI event" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Events / 2026</p><h2>Community connections</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="workshop">
+    <a href="./assets/images/gallery/speaking-mentoring.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: mentoring session (new tab)"><img src="./assets/images/gallery/thumbs/speaking-mentoring.jpg" alt="Mentoring participants during a community session" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Workshop / 2026</p><h2>Mentoring session</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="workshop">
+    <a href="./assets/images/gallery/speaking-discussion.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: workshop discussion (new tab)"><img src="./assets/images/gallery/thumbs/speaking-discussion.jpg" alt="Technical discussion during a workshop" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Workshop / 2026</p><h2>Workshop discussion</h2></figcaption>
+  </figure>
+  <figure class="gallery-card" data-gallery-category="workshop">
+    <a href="./assets/images/gallery/workshop-hackathon.jpg" target="_blank" rel="noopener noreferrer" aria-label="Open original photo: hackathon workshop (new tab)"><img src="./assets/images/gallery/thumbs/workshop-hackathon.jpg" alt="Working with participants at a hackathon workshop" width="400" height="300" loading="lazy" decoding="async"></a>
+    <figcaption><p>Workshop / 2026</p><h2>Hackathon workshop</h2></figcaption>
+  </figure>
+</div>
